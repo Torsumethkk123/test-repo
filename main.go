@@ -14,6 +14,14 @@ func (c Cat) Speak() {
 	fmt.Println(c.Name + ": Meow")
 }
 
+type Dog struct {
+	Name string
+}
+
+func (d Dog) Speak() {
+	fmt.Println(d.Name + ": Howl")
+}
+
 func main() {
 	var cat Speakable
 	cat = Cat{ Name: "Gigy" }
